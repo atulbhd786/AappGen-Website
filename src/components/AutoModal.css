@@ -1,0 +1,63 @@
+.bmodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999; /* 🔥 must */
+}
+
+.bmodal-box {
+  background: #fff;
+  width: 420px;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  animation: zoomIn 0.3s ease;
+}
+
+.bmodal-box h2 {
+  color: #00bfa6;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.bmodal-box p {
+  font-size: 14px;
+  color: #555;
+}
+
+.bmodal-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #00bfa6;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,88 @@
+/* Vertical Feedback Button */
+.feedback-btn {
+  position: fixed;
+    right: -50px;
+    top: 50%;
+    transform: rotate(-90deg);
+    background: #00bfa6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 6px 6px 0 0;
+    z-index: 1000;
+    letter-spacing: 0.1rem;
+    font-size: 18px;
+}
+
+/* Slide Panel */
+.feedback-panel {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -4px 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: 0.4s ease;
+  z-index: 1000;
+}
+
+.feedback-panel.open {
+  right: 0;
+}
+
+.close {
+  font-size: 24px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Stars */
+.stars {
+  margin: 20px 0;
+}
+
+.stars span {
+  font-size: 30px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.stars span.active {
+  color: gold;
+}
+
+/* Buttons */
+.submit-btn {
+  background: #00bfa6;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.thanks {
+  text-align: center;
+  color: green;
+  margin-top: 40px;
+}
+
+.comment-box {
+  width: 100%;
+  min-height: 80px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 14px;
+}
+
+.comment-box:focus {
+  outline: none;
+  border-color: #00bfa6;
+}
