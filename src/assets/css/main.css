@@ -4425,6 +4425,7 @@ footer .copyright p {
 .main-responsive-width-path{
     background-color: #0056b3;
     border: 2px solid;
+    box-sizing: border-box;
 }
 
 /* #endregion Miscellaneous */
