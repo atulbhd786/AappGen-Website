@@ -4422,6 +4422,11 @@ footer .copyright p {
     font-size: 25px;
 }
 
+.main-responsive-width-path{
+    background-color: #0056b3;
+    border: 2px solid;
+}
+
 /* #endregion Miscellaneous */
 
 /*----------------------------------------------
