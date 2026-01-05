@@ -65,14 +65,18 @@ const styles = {
   form: {
     background: "#fff",
     padding: "30px",
-    width: "320px",
+    width: "40%",
     borderRadius: "8px",
     boxShadow: "0 0 10px rgba(0,0,0,0.1)",
+    textAlign: "center",
   },
   input: {
     width: "100%",
     padding: "10px",
     margin: "10px 0",
+    border: "1px solid #eee",
+    height:"50px",
+    background: "#f9f9f9",
   },
   button: {
     width: "100%",
