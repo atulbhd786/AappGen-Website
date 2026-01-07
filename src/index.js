@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./App.css";
 import "./assets/css/style.css";
+import { BrowserRouter } from "react-router-dom";
 
 import "./assets/css/default.css";
 // import "./assets/css/gallery.min.css";
@@ -14,4 +15,6 @@ import "./assets/css/main.css";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render( <BrowserRouter>
+    <App />
+  </BrowserRouter>);
