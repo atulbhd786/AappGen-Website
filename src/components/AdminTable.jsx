@@ -66,7 +66,13 @@ function AdminTable() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h2>Contact Enquiries</h2>
+      <div className="admin-header">
+        <h1>Contact Enquiries</h1>
+
+        <button className="export-btn">
+            Export Data
+        </button>
+        </div>
 
       <table border="1" cellPadding="10" cellSpacing="0" width="100%">
         <thead style={{ background: "#00a6a6", color: "#fff" }}>
