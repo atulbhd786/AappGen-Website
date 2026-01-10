@@ -16,19 +16,7 @@ import AdminLogin from "./components/AdminLogin";
 import AdminTable from "./components/AdminTable";
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
-
-  useEffect(() => {
-    // open on load
-    setShowModal(true);
-
-    // auto close after 8 seconds
-    const timer = setTimeout(() => {
-      setShowModal(false);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
+  
   return (
     <>
       <Routes>

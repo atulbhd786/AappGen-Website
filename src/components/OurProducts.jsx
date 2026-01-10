@@ -47,7 +47,7 @@ function OurProducts() {
         );
 
   return (
-    <section className="products-section">
+    <section className="products-section" id="projects">
       <h5 className="subtitle">We Do More For Everyone</h5>
       <h2 className="title text-white">Our Products</h2>
 

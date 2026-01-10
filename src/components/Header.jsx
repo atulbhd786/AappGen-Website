@@ -20,6 +20,15 @@ const [isSticky, setIsSticky] = useState(false);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
 return(
      <header id="header">
             <nav className="navbar navbar-expand top">
@@ -86,24 +95,24 @@ return(
                     
                     <ul className="navbar-nav items">
                         <li className="nav-item">
-                            <a href="#header" className="smooth-anchor nav-link">HOME</a>
+                            <button className="nav-link" onClick={() => scrollToSection("header")}>HOME</button>
                         </li>
                         <li className="nav-item">
-                            <a href="#funfacts" className="smooth-anchor nav-link">ABOUT</a>
+                            <button className="nav-link" onClick={() => scrollToSection("funfacts")}>ABOUT</button>
                         </li>
                         <li className="nav-item">
-                            <a href="#projects" className="smooth-anchor nav-link">PRODUCTS</a>
+                            <button className="nav-link" onClick={() => scrollToSection("projects")}>PRODUCTS</button>
                         </li>
                         <li className="nav-item">
-                            <a href="#process" className="smooth-anchor nav-link">SERVICES</a>
+                            <button className="nav-link" onClick={() => scrollToSection("process")}>SERVICES</button>
                         </li>
                         <li className="nav-item">
-                            <a href="#testimonials" className="smooth-anchor nav-link">TESTIMONIALS</a>
+                            <button className="nav-link" onClick={() => scrollToSection("testimonials")}>TESTIMONIALS</button>
                         </li>
                         <li className="nav-item">
-                            <a href="#contact" className="smooth-anchor nav-link">CONTACTS</a>
+                            <button className="nav-link" onClick={() => scrollToSection("contact")}>CONTACTS</button>
                         </li>
-                    </ul>
+                        </ul>
 
                    
                     <ul className="navbar-nav icons">

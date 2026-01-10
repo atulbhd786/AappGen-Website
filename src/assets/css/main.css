@@ -4412,9 +4412,10 @@ footer .copyright p {
 
 .slide-content .primary-button, .contact .primary-button, .navbar-nav .primary-button {
     background: #00a6a6;
-    height: 50px;
     color: #fff;
     text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .feedback-panel h3 {
