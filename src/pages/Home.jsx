@@ -8,6 +8,7 @@ import Testimonials from "../components/Testimonials";
 import AutoModal from "../components/AutoModal";
 import { useEffect, useState } from "react";
 import Feedback from "../components/Feedback";
+import ChatBot from "../components/ChatBot";
 
 function Home(){
     const [showModal, setShowModal] = useState(false);
@@ -23,6 +24,6 @@ function Home(){
 
     return () => clearTimeout(timer);
   }, []);
-return(<><Hero/><About/><OurProducts /><Services/><Testimonials/><Contact/><Feedback /><AutoModal show={showModal} onClose={() => setShowModal(false)}/></>);
+return(<><Hero/><About/><OurProducts /><Services/><Testimonials/><Contact/><Feedback /><AutoModal show={showModal} onClose={() => setShowModal(false)}/><ChatBot/></>);
 }
 export default Home;
